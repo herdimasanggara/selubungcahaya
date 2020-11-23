@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'emotional';
+  src: url("emotional-vf.ttf") format("truetype-variations");
+  font-weight: 0;
+  font-style: normal;
+}
+
+html, body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*margin: 50px;*/
+  color: white;
+  background: black;
+  font-size: 7vw;
+  font-weight: normal;
+  font-family: 'emotional', 'arial';
+  text-transform: lowercase;
+  font-variation-settings: "wdth"500, "wght"0;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern"1;
+  -webkit-font-feature-settings: "kern"1;
+  font-kerning: normal;
+  -webkit-font-kerning: normal;
+  font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  outline: none;
+}
+
+p {
+  font-weight: normal;
+  outline: none;
+  font-size: 3vw;
+  line-height: 1.25;
+  display: block;
+  white-space: normal;
+  text-indent: 50%;
+}
+
+img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.title {
+  text-align: center;
+}
+
+:root {
+  cursor: none;
+  --cursorX: 25vw;
+  --cursorY: 25vh;
+}
+
+:root:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(circle 35vmax at var(--cursorX) var(--cursorY),
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, .75) 50%,
+    rgba(255, 255, 255, 1) 100%)
+}
+
+/*.wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+background: linear-gradient(45deg, aqua, aquamarine);
+background-size: 1500% 1500%;
+
+-webkit-animation: rainbow 1s ease infinite;
+-z-animation: rainbow 1s ease infinite;
+-o-animation: rainbow 1s ease infinite;
+  animation: rainbow 1s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
